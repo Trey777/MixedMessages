@@ -1,5 +1,9 @@
 const friendlyAdjectives = ["lovely", "truthful","wealthy","inspiring","wise","faithful"];
+export const friendlyNames = ["Mi amigo", "Sir","My love", "Amore"];
 
+function myRandomizer(inputArr){
+    return inputArr[Math.floor(Math.random() * inputArr.length)];
+}
 
 export class friendlyWords{
     constructor(userName){
@@ -10,6 +14,6 @@ export class friendlyWords{
     }
     respondingMessage(){
         const randomWord = friendlyAdjectives[Math.floor(Math.random() * friendlyAdjectives.length)];
-        return `${this.userName}, you are a ${randomWord} person.`;
+        return `${myRandomizer(friendlyNames)}, you are a ${myRandomizer(friendlyAdjectives)} person.`;
     }
 }
