@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="./style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testing Phase 1</title>
+    <script type="module" src="scripts.js"></script>
+    <title>Magic 8</title>
 </head>
+
 <body>
-    <div id="justifyMe"></div>
+    <div id="content">
+        <div id="resetButton" onclick="resetFunction()">
+            <p id="resetWords">Reset</p>
+        </div>
     
-<script type="module" src="mixedMessages.js"></script>
-</body>
+        <div id="messageCenter">
+            <p id="mainWords"></p>
+        </div>
+        <div id="yellowDiv">
+            <button id="startButton" onclick="startFunction()">START</button>
+        </div>
+    </div>
+    </body>
+
 </html>
